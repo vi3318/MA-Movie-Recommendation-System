@@ -32,7 +32,7 @@ The connection string is already set up in the application.properties files.
 ### 1. Clone the repository
 
 ```bash
-git clone [<repository-url>](https://github.com/harshkkamdar/MA-Movie-Recommendation-System.git)
+git clone https://github.com/harshkkamdar/MA-Movie-Recommendation-System.git
 cd movie-recommendation-system
 ```
 
