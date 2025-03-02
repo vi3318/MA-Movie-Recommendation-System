@@ -33,7 +33,7 @@ The connection string is already set up in the application.properties files.
 
 ```bash
 git clone https://github.com/harshkkamdar/MA-Movie-Recommendation-System.git
-cd movie-recommendation-system
+cd MA-Movie-Recommendation-System
 ```
 
 ### 2. Build the services
