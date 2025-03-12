@@ -8,7 +8,8 @@
             "mainClass": "com.moviecatalogservice.MoviecatalogserviceApplication",
             "projectName": "moviecatalogservice",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
         },
         {
             "type": "java",
@@ -18,7 +19,8 @@
             "mainClass": "com.recommendationservice.RecommendationserviceApplication",
             "projectName": "recommendationservice",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
         },
         {
             "type": "java",
@@ -37,6 +39,36 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.userservice.UserserviceApplication",
             "projectName": "userservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<apiGateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.apiGateway.ApiGatewayApplication",
+            "projectName": "apiGateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaServerApplication<eurekaServer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.eurekaServer.EurekaServerApplication",
+            "projectName": "eurekaServer",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ReviewServiceApplication<reviewservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.reviewservice.ReviewServiceApplication",
+            "projectName": "reviewservice",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

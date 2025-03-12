@@ -1,15 +1,17 @@
 # Movie Recommendation System
 
-A microservices-based movie recommendation platform built with Spring Boot, MongoDB, and OpenFeign.
+A microservices-based movie recommendation platform built with Spring Boot, MongoDB, OpenFeign, and Spring Cloud Netflix.
 
 ## Architecture
 
-The application is composed of four microservices:
+The application is composed of six microservices:
 
 1. **User Service** - Manages user profiles, authentication, and watch history
 2. **Movie Catalog Service** - Stores and manages movie information
 3. **Review Service** - Handles movie reviews and ratings
 4. **Recommendation Service** - Generates personalized movie recommendations
+5. **Eureka Server** - Service registry for service discovery
+6. **API Gateway** - Single entry point for all client requests, routing to appropriate services
 
 ## Prerequisites
 
@@ -27,6 +29,8 @@ All services are configured to connect to a single MongoDB Atlas database called
 
 The connection string is already set up in the application.properties files.
 
+All microservices are configured to register with the Eureka Server for service discovery, and the API Gateway routes requests to the appropriate services.
+
 ## Running the Application
 
 ### 1. Clone the repository
@@ -39,6 +43,16 @@ cd MA-Movie-Recommendation-System
 ### 2. Build the services
 
 ```bash
+# Build Eureka Server
+cd eurekaServer
+mvn clean package
+cd ..
+
+# Build API Gateway
+cd apiGateway
+mvn clean package
+cd ..
+
 # Build User Service
 cd userservice
 mvn clean package
@@ -62,9 +76,17 @@ cd ..
 
 ### 3. Run the services
 
-Start each service in a separate terminal:
+Start each service in a separate terminal, making sure to start the Eureka Server first:
 
 ```bash
+# Run Eureka Server (Port 8761)
+cd eurekaServer
+java -jar target/eurekaServer-0.0.1-SNAPSHOT.jar
+
+# Run API Gateway (Port 8080)
+cd apiGateway
+java -jar target/apiGateway-0.0.1-SNAPSHOT.jar
+
 # Run User Service (Port 8081)
 cd userservice
 java -jar target/userservice-0.0.1-SNAPSHOT.jar
@@ -91,12 +113,24 @@ Swagger UI is available for each service at:
 - Review Service: http://localhost:8083/swagger-ui.html
 - Recommendation Service: http://localhost:8084/swagger-ui.html
 
+You can also access all services through the API Gateway:
+
+- User Service: http://localhost:8080/api/users/**
+- Movie Catalog Service: http://localhost:8080/api/movies/**
+- Review Service: http://localhost:8080/api/reviews/**
+- Recommendation Service: http://localhost:8080/api/recommendations/**
+
+The Eureka Server dashboard is available at:
+- http://localhost:8761
+
 ## Key Features
 
 - **User Management:** Registration, login, profile management, and watch history
 - **Movie Catalog:** Store and manage movie information
 - **Reviews and Ratings:** Submit and retrieve movie reviews and ratings
 - **Recommendation Engine:** Rule-based recommendations based on user preferences, watch history, and review ratings
+- **Service Discovery:** Automatic registration and discovery of services using Eureka Server
+- **API Gateway:** Centralized routing and load balancing for all client requests
 
 ## Security
 
@@ -108,7 +142,7 @@ The User Service implements JWT-based authentication. To access protected endpoi
 
 ## Inter-Service Communication
 
-The microservices communicate with each other using OpenFeign clients. Here's how the communication flows:
+The microservices communicate with each other using OpenFeign clients and service discovery through Eureka. Here's how the communication flows:
 
 ### Recommendation Service
 - Communicates with User Service to get user profiles, preferred genres, and watch history
@@ -123,6 +157,18 @@ This ensures data integrity by preventing:
 - Reviews for non-existent movies
 - Reviews from non-existent users
 
+### Service Discovery
+All microservices register with the Eureka Server, allowing them to discover and communicate with each other without hardcoded URLs. This provides:
+- Dynamic service discovery
+- Load balancing
+- Fault tolerance
+
+### API Gateway
+The API Gateway serves as a single entry point for all client requests, providing:
+- Centralized routing to appropriate services
+- Load balancing
+- Potential for cross-cutting concerns like authentication, logging, etc.
+
 ### Testing Inter-Service Communication
 
 You can test the inter-service communication using the following endpoints:
@@ -131,10 +177,18 @@ You can test the inter-service communication using the following endpoints:
 ```
 GET http://localhost:8084/api/recommendations/test-communication/{userId}
 ```
+Or through the API Gateway:
+```
+GET http://localhost:8080/api/recommendations/test-communication/{userId}
+```
 
 2. For Review Service (adding a review will automatically validate movie and user existence):
 ```
 POST http://localhost:8083/api/reviews
+```
+Or through the API Gateway:
+```
+POST http://localhost:8080/api/reviews
 ```
 With a JSON body like:
 ```json
