@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+  eureka-server:
+    build: 
+      context: ./eurekaServer
+    ports:
+      - "8761:8761"
+    container_name: eureka-server
+    restart: always
+    networks:
+      - movie-network
+
+  api-gateway:
+    build: 
+      context: ./apiGateway
+    ports:
+      - "8080:8080"
+    container_name: api-gateway
+    restart: always
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - movie-network
+
+  user-service:
+    build: 
+      context: ./userservice
+    ports:
+      - "8081:8081"
+    container_name: user-service
+    restart: always
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - movie-network
+
+  movie-catalog-service:
+    build: 
+      context: ./moviecatalogservice
+    ports:
+      - "8082:8082"
+    container_name: movie-catalog-service
+    restart: always
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - movie-network
+
+  review-service:
+    build: 
+      context: ./reviewservice
+    ports:
+      - "8083:8083"
+    container_name: review-service
+    restart: always
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - movie-network
+
+  recommendation-service:
+    build: 
+      context: ./recommendationservice
+    ports:
+      - "8084:8084"
+    container_name: recommendation-service
+    restart: always
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - movie-network
+
+networks:
+  movie-network:
+    driver: bridge 
