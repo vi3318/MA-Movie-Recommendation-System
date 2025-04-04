@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommendation-service
+  namespace: movie-reco-system
+  labels:
+    app: recommendation-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: recommendation-service
+  template:
+    metadata:
+      labels:
+        app: recommendation-service
+    spec:
+      containers:
+      - name: recommendation-service
+        image: recommendation-service:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8084
+        envFrom:
+        - configMapRef:
+            name: movie-reco-config
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "200m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8084
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8084
+          initialDelaySeconds: 45
+          periodSeconds: 15
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: recommendation-service
+  namespace: movie-reco-system
+spec:
+  selector:
+    app: recommendation-service
+  ports:
+  - port: 8084
+    targetPort: 8084
+  type: ClusterIP 

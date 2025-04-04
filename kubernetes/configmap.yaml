@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: movie-reco-config
+  namespace: movie-reco-system
+data:
+  EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+  SPRING_APPLICATION_NAME.moviecatalogservice: moviecatalogservice
+  SPRING_DATA_MONGODB_URI: mongodb+srv://harshkkamdar:harshkkamdar@alokbackend.zh783fq.mongodb.net/MovieReco 
