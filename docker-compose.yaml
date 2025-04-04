@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  eureka-server:
+    build:
+      context: ./eurekaServer    # Updated to match CamelCase folder name
+      dockerfile: Dockerfile
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - app-network
+
+  api-gateway:
+    build:
+      context: ./apiGateway    # Updated to match CamelCase folder name
+      dockerfile: Dockerfile
+    container_name: api-gateway
+    depends_on:
+      - eureka-server
+    ports:
+      - "8080:8080"
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+    networks:
+      - app-network
+
+  user-service:
+    build:
+      context: ./userService      # Updated to match CamelCase folder name
+      dockerfile: Dockerfile
+    container_name: user-service
+    depends_on:
+      - eureka-server
+    ports:
+      - "8081:8080"
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+    networks:
+      - app-network
+
+  movie-catalog-service:
+    build:
+      context: ./movieCatalogService  # Updated to match CamelCase folder name
+      dockerfile: Dockerfile
+    container_name: movie-catalog-service
+    depends_on:
+      - eureka-server
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_APPLICATION_NAME: moviecatalogservice
+      SPRING_DATA_MONGODB_URI: mongodb+srv://harshkkamdar:harshkkamdar@alokbackend.zh783fq.mongodb.net/MovieReco
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+    networks:
+      - app-network
+
+  review-service:
+    build:
+      context: ./reviewService    # Updated to match CamelCase folder name
+      dockerfile: Dockerfile
+    container_name: review-service
+    depends_on:
+      - eureka-server
+    ports:
+      - "8083:8083"
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+    networks:
+      - app-network
+
+  recommendation-service:
+    build:
+      context: ./recommendationService  # Updated to match CamelCase folder name
+      dockerfile: Dockerfile
+    container_name: recommendation-service
+    depends_on:
+      - eureka-server
+    ports:
+      - "8084:8084"
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
