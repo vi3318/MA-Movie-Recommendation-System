@@ -1,0 +1,29 @@
+@echo off
+echo Deploying all services to Kubernetes...
+
+echo Creating Kubernetes namespace if not exists...
+kubectl create namespace movie-recommendation || echo Namespace already exists
+
+echo Deploying Eureka Server...
+kubectl apply -f k8s/eureka-server.yaml -n movie-recommendation
+
+echo Waiting for Eureka Server to be ready...
+timeout /t 30
+
+echo Deploying API Gateway...
+kubectl apply -f k8s/api-gateway.yaml -n movie-recommendation
+
+echo Deploying User Service...
+kubectl apply -f k8s/user-service.yaml -n movie-recommendation
+
+echo Deploying Movie Catalog Service...
+kubectl apply -f k8s/movie-catalog-service.yaml -n movie-recommendation
+
+echo Deploying Review Service...
+kubectl apply -f k8s/review-service.yaml -n movie-recommendation
+
+echo Deploying Recommendation Service...
+kubectl apply -f k8s/recommendation-service.yaml -n movie-recommendation
+
+echo All services deployed to Kubernetes!
+echo To check status, run: kubectl get all -n movie-recommendation 
