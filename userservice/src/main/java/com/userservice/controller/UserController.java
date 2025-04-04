@@ -24,7 +24,7 @@ public class UserController {
     public ResponseEntity<?> getCurrentUserProfile() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
-        
+
         Optional<User> userOpt = userService.findByUsername(username);
         if (userOpt.isPresent()) {
             User user = userOpt.get();
@@ -32,7 +32,7 @@ public class UserController {
             user.setPassword(null);
             return ResponseEntity.ok(user);
         }
-        
+
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
     }
 
@@ -45,7 +45,7 @@ public class UserController {
             user.setPassword(null);
             return ResponseEntity.ok(user);
         }
-        
+
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
     }
 
@@ -53,25 +53,25 @@ public class UserController {
     public ResponseEntity<?> updateUserProfile(@RequestBody User updatedUser) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
-        
+
         Optional<User> userOpt = userService.findByUsername(username);
         if (userOpt.isPresent()) {
             User user = userOpt.get();
-            
+
             // Update only allowed fields
             if (updatedUser.getEmail() != null) {
                 user.setEmail(updatedUser.getEmail());
             }
-            
+
             if (updatedUser.getPreferredGenres() != null) {
                 user.setPreferredGenres(updatedUser.getPreferredGenres());
             }
-            
+
             User savedUser = userService.updateUser(user);
             savedUser.setPassword(null);
             return ResponseEntity.ok(savedUser);
         }
-        
+
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
     }
 
@@ -79,16 +79,16 @@ public class UserController {
     public ResponseEntity<?> addToWatchHistory(@RequestBody Map<String, String> request) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
-        
+
         Optional<User> userOpt = userService.findByUsername(username);
         if (userOpt.isPresent()) {
             User user = userOpt.get();
             String movieId = request.get("movieId");
-            
+
             userService.addToWatchHistory(user.getId(), movieId);
             return ResponseEntity.ok("Movie added to watch history");
         }
-        
+
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
     }
 
@@ -96,14 +96,14 @@ public class UserController {
     public ResponseEntity<?> getWatchHistory() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
-        
+
         Optional<User> userOpt = userService.findByUsername(username);
         if (userOpt.isPresent()) {
             User user = userOpt.get();
             List<String> watchHistory = userService.getWatchHistory(user.getId());
             return ResponseEntity.ok(watchHistory);
         }
-        
+
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
     }
 
@@ -111,16 +111,16 @@ public class UserController {
     public ResponseEntity<?> addPreferredGenre(@RequestBody Map<String, String> request) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
-        
+
         Optional<User> userOpt = userService.findByUsername(username);
         if (userOpt.isPresent()) {
             User user = userOpt.get();
             String genre = request.get("genre");
-            
+
             userService.addPreferredGenre(user.getId(), genre);
             return ResponseEntity.ok("Genre added to preferences");
         }
-        
+
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
     }
 } 
