@@ -1,0 +1,930 @@
+[{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a02292"
+  },
+  "title": "3 Idiots",
+  "description": "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently.",
+  "genres": [
+    "Comedy",
+    "Drama"
+  ],
+  "releaseYear": 2009,
+  "director": "Rajkumar Hirani",
+  "actors": [
+    "Aamir Khan",
+    "R. Madhavan",
+    "Sharman Joshi",
+    "Kareena Kapoor"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhMzQtNmMzNjRmNjQ4MjM1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a02293"
+  },
+  "title": "Dangal",
+  "description": "Former wrestler Mahavir Singh Phogat trains his daughters Geeta and Babita to become India's first world-class female wrestlers.",
+  "genres": [
+    "Biography",
+    "Drama",
+    "Sports"
+  ],
+  "releaseYear": 2016,
+  "director": "Nitesh Tiwari",
+  "actors": [
+    "Aamir Khan",
+    "Fatima Sana Shaikh",
+    "Sanya Malhotra",
+    "Sakshi Tanwar"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a02294"
+  },
+  "title": "PK",
+  "description": "An alien on Earth loses the only device he can use to communicate with his spaceship. His innocent nature and child-like questions force the country to evaluate the impact of religion on its people.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Sci-Fi"
+  ],
+  "releaseYear": 2014,
+  "director": "Rajkumar Hirani",
+  "actors": [
+    "Aamir Khan",
+    "Anushka Sharma",
+    "Sanjay Dutt",
+    "Sushant Singh Rajput"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTYzOTE2NjkxN15BMl5BanBnXkFtZTgwMDgzMTg0MzE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a02295"
+  },
+  "title": "Lagaan: Once Upon a Time in India",
+  "description": "The people of a small village in Victorian India stake their future on a game of cricket against their ruthless British rulers.",
+  "genres": [
+    "Adventure",
+    "Drama",
+    "Musical",
+    "Sport"
+  ],
+  "releaseYear": 2001,
+  "director": "Ashutosh Gowariker",
+  "actors": [
+    "Aamir Khan",
+    "Gracy Singh",
+    "Rachel Shelley",
+    "Paul Blackthorne"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a02296"
+  },
+  "title": "Dilwale Dulhania Le Jayenge",
+  "description": "When Raj meets Simran in Europe, it isn't love at first sight but when Simran is about to get engaged to her father's choice of groom, Raj makes her realize her own choice.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "releaseYear": 1995,
+  "director": "Aditya Chopra",
+  "actors": [
+    "Shah Rukh Khan",
+    "Kajol",
+    "Amrish Puri",
+    "Farida Jalal"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDI3ZWYtZTkUZDYtY2I5ZTZkOWU3YTM3NjM4NzZkXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a02297"
+  },
+  "title": "Gully Boy",
+  "description": "A coming-of-age story about an aspiring street rapper from the slums of Mumbai.",
+  "genres": [
+    "Drama",
+    "Music"
+  ],
+  "releaseYear": 2019,
+  "director": "Zoya Akhtar",
+  "actors": [
+    "Ranveer Singh",
+    "Alia Bhatt",
+    "Kalki Koechlin",
+    "Siddhant Chaturvedi"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2Q5YjNjZWMtYThmYy00YTUwLWEyM2UtMDM2MDZiMWM4MzQ4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a02298"
+  },
+  "title": "Andhadhun",
+  "description": "A series of mysterious events change the life of a blind pianist, who must now report a crime that he never actually witnessed.",
+  "genres": [
+    "Crime",
+    "Drama",
+    "Mystery",
+    "Thriller"
+  ],
+  "releaseYear": 2018,
+  "director": "Sriram Raghavan",
+  "actors": [
+    "Ayushmann Khurrana",
+    "Tabu",
+    "Radhika Apte",
+    "Anil Dhawan"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BZWZhMjhhZmYtOTIzOC00MGYzLWI1OGYtNzM0NTEwNjJlYmJlXkEyXkFqcGdeQXVyODAzNzAwOTU@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a02299"
+  },
+  "title": "Queen",
+  "description": "A Delhi girl from a traditional family sets out on a solo honeymoon after her marriage gets cancelled.",
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Drama"
+  ],
+  "releaseYear": 2014,
+  "director": "Vikas Bahl",
+  "actors": [
+    "Kangana Ranaut",
+    "Rajkummar Rao",
+    "Lisa Haydon",
+    "Jeffrey Ho"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BNWYyOWRlOWItZWM5MS00ZjJkLWI0MTUtYTE3NTI5MDAwYjgyXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a0229a"
+  },
+  "title": "Zindagi Na Milegi Dobara",
+  "description": "Three friends decide to turn their fantasy vacation into reality after one of them becomes engaged.",
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Drama"
+  ],
+  "releaseYear": 2011,
+  "director": "Zoya Akhtar",
+  "actors": [
+    "Hrithik Roshan",
+    "Farhan Akhtar",
+    "Abhay Deol",
+    "Katrina Kaif"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BZGE5YzVkZDUtZTY2Yi00YzE5LWE1ZTUtNTRiZjMxZGY0YzY3XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a0229b"
+  },
+  "title": "Bajrangi Bhaijaan",
+  "description": "An Indian man with a magnanimous heart takes a young mute Pakistani girl back to her homeland to reunite her with her family.",
+  "genres": [
+    "Action",
+    "Comedy",
+    "Drama"
+  ],
+  "releaseYear": 2015,
+  "director": "Kabir Khan",
+  "actors": [
+    "Salman Khan",
+    "Harshaali Malhotra",
+    "Nawazuddin Siddiqui",
+    "Kareena Kapoor"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjE1NjQ5ODc2NV5BMl5BanBnXkFtZTgwOTM5NzY3NTM@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a0229c"
+  },
+  "title": "Barfi!",
+  "description": "Three young people learn that love can neither be defined nor contained by society's definition of normal and abnormal.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "releaseYear": 2012,
+  "director": "Anurag Basu",
+  "actors": [
+    "Ranbir Kapoor",
+    "Priyanka Chopra",
+    "Ileana D'Cruz",
+    "Saurabh Shukla"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTQzMDU5NzQ0Nl5BMl5BanBnXkFtZTcwMjM2NzY3Nw@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a0229d"
+  },
+  "title": "Piku",
+  "description": "A quirky father-daughter relationship, where the father's eccentricities drive his daughter crazy.",
+  "genres": [
+    "Comedy",
+    "Drama"
+  ],
+  "releaseYear": 2015,
+  "director": "Shoojit Sircar",
+  "actors": [
+    "Amitabh Bachchan",
+    "Deepika Padukone",
+    "Irrfan Khan",
+    "Moushumi Chatterjee"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTUyMzgxMzE5M15BMl5BanBnXkFtZTgwMTE3MzYxNjE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a0229e"
+  },
+  "title": "Rang De Basanti",
+  "description": "The story of six young Indians who assist an English woman to film a documentary on the extremist freedom fighters from their past, and the events that lead them to relive the long-forgotten saga of freedom.",
+  "genres": [
+    "Drama"
+  ],
+  "releaseYear": 2006,
+  "director": "Rakeysh Omprakash Mehra",
+  "actors": [
+    "Aamir Khan",
+    "Siddharth",
+    "Sharman Joshi",
+    "Kunal Kapoor"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMGJjY2Y0OTgtYmE3Ny00ZjlkLTk5ZjgtNjM3NWE4ZjNlMjlkXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a0229f"
+  },
+  "title": "Taare Zameen Par",
+  "description": "An eight-year-old boy is thought to be a lazy trouble-maker, until the new art teacher has the patience and compassion to discover the real problem behind his struggles in school.",
+  "genres": [
+    "Drama",
+    "Family"
+  ],
+  "releaseYear": 2007,
+  "director": "Aamir Khan",
+  "actors": [
+    "Darsheel Safary",
+    "Aamir Khan",
+    "Tisca Chopra",
+    "Vipin Sharma"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMDhjZWViN2MtNzgxOS00NmI4LThiZDktNDI5NmYzMzFhZTM3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a0"
+  },
+  "title": "Swades",
+  "description": "A successful Indian scientist returns to an Indian village to take his nanny to America with him and in the process rediscovers his roots.",
+  "genres": [
+    "Drama"
+  ],
+  "releaseYear": 2004,
+  "director": "Ashutosh Gowariker",
+  "actors": [
+    "Shah Rukh Khan",
+    "Gayatri Joshi",
+    "Kishori Ballal",
+    "Smit Sheth"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BYzExOTczNjgtZWUzNy00ZDlhLWJmNzktMmRkODU5ZjEwMmM4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a1"
+  },
+  "title": "Munna Bhai M.B.B.S.",
+  "description": "A gangster sets out to fulfill his father's dream of becoming a doctor.",
+  "genres": [
+    "Comedy",
+    "Drama"
+  ],
+  "releaseYear": 2003,
+  "director": "Rajkumar Hirani",
+  "actors": [
+    "Sanjay Dutt",
+    "Arshad Warsi",
+    "Gracy Singh",
+    "Sunil Dutt"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMGI0NzI5ZjAtNDZmNi00NmE3LThjNzQtOTYzNTMzMDMxOTc0XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a2"
+  },
+  "title": "My Name is Khan",
+  "description": "An Indian Muslim man with Asperger's syndrome takes a challenge to speak to the President of the United States seriously and embarks on a cross-country journey.",
+  "genres": [
+    "Drama",
+    "Romance"
+  ],
+  "releaseYear": 2010,
+  "director": "Karan Johar",
+  "actors": [
+    "Shah Rukh Khan",
+    "Kajol",
+    "Jimmy Shergill",
+    "Zarina Wahab"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTUyMTA4MTYzMV5BMl5BanBnXkFtZTcwMjMxMTc0Mw@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a3"
+  },
+  "title": "Kahaani",
+  "description": "A pregnant woman's search for her missing husband takes her from London to Kolkata, but everyone she questions denies having ever met him.",
+  "genres": [
+    "Mystery",
+    "Thriller"
+  ],
+  "releaseYear": 2012,
+  "director": "Sujoy Ghosh",
+  "actors": [
+    "Vidya Balan",
+    "Parambrata Chatterjee",
+    "Indraneil Sengupta",
+    "Nawazuddin Siddiqui"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTQ1NDUwODU2NF5BMl5BanBnXkFtZTcwODk2OTM1OA@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a4"
+  },
+  "title": "Drishyam",
+  "description": "A man goes to extreme lengths to save his family from punishment after his family commits an accidental crime.",
+  "genres": [
+    "Crime",
+    "Drama",
+    "Mystery",
+    "Thriller"
+  ],
+  "releaseYear": 2015,
+  "director": "Nishikant Kamat",
+  "actors": [
+    "Ajay Devgn",
+    "Tabu",
+    "Shriya Saran",
+    "Ishita Dutta"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BYmJhZmJlMDItZmZlNy00MGE0LTcxNDctNjJiMjQ2NGI4Y2U1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a5"
+  },
+  "title": "Gangs of Wasseypur",
+  "description": "A clash between Sultan and Shahid Khan leads to the expulsion of Khan from Wasseypur, and ignites a deadly blood feud spanning three generations.",
+  "genres": [
+    "Action",
+    "Crime",
+    "Drama"
+  ],
+  "releaseYear": 2012,
+  "director": "Anurag Kashyap",
+  "actors": [
+    "Manoj Bajpayee",
+    "Richa Chadda",
+    "Nawazuddin Siddiqui",
+    "Tigmanshu Dhulia"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTc5NjY4MjUwNF5BMl5BanBnXkFtZTgwODM3NzM5MzE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a6"
+  },
+  "title": "Udaan",
+  "description": "Expelled from his school, a 16-year old returns home to his abusive and oppressive father.",
+  "genres": [
+    "Drama"
+  ],
+  "releaseYear": 2010,
+  "director": "Vikramaditya Motwane",
+  "actors": [
+    "Rajat Barmecha",
+    "Ronit Roy",
+    "Manjot Singh",
+    "Ram Kapoor"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTc4MTc1OTMxOV5BMl5BanBnXkFtZTcwMTQxMTU2Mw@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a7"
+  },
+  "title": "Haider",
+  "description": "A young man returns to Kashmir after his father's disappearance to confront his uncle, whom he suspects of playing a role in his father's fate.",
+  "genres": [
+    "Action",
+    "Crime",
+    "Drama"
+  ],
+  "releaseYear": 2014,
+  "director": "Vishal Bhardwaj",
+  "actors": [
+    "Shahid Kapoor",
+    "Tabu",
+    "Shraddha Kapoor",
+    "Kay Kay Menon"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMGY2NjgyZDctMDYxZC00YWQ2LTg1NWMtN2JiMDRjNzlkMTI0XkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a8"
+  },
+  "title": "Bhool Bhulaiyaa",
+  "description": "When U.S.-based Siddharth visits his Indian home town with his new wife, he insists they stay at the ancestral home, despite warnings from his family.",
+  "genres": [
+    "Comedy",
+    "Horror",
+    "Mystery"
+  ],
+  "releaseYear": 2007,
+  "director": "Priyadarshan",
+  "actors": [
+    "Akshay Kumar",
+    "Vidya Balan",
+    "Shiney Ahuja",
+    "Ameesha Patel"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjAyMDM0Mjg0Nl5BMl5BanBnXkFtZTgwMjU3MzI4MjE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022a9"
+  },
+  "title": "Kal Ho Naa Ho",
+  "description": "Naina, an introverted, perpetually depressed girl's life changes when she meets Aman. But Aman has a secret of his own which changes their lives forever.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "releaseYear": 2003,
+  "director": "Nikkhil Advani",
+  "actors": [
+    "Shah Rukh Khan",
+    "Preity Zinta",
+    "Saif Ali Khan",
+    "Jaya Bachchan"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTkxNzU2MDczM15BMl5BanBnXkFtZTcwMzE3NTIzMQ@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022aa"
+  },
+  "title": "Dil Chahta Hai",
+  "description": "Three inseparable childhood friends are just out of college. Nothing comes between them - until they each fall in love, and their wildly different approaches to relationships creates tension.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "releaseYear": 2001,
+  "director": "Farhan Akhtar",
+  "actors": [
+    "Aamir Khan",
+    "Saif Ali Khan",
+    "Akshaye Khanna",
+    "Preity Zinta"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BOWQ2MjA1ZjEtMzVhNS00MjRmLTgyY2YtMDYxOTQxNDhiYWVjXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022ab"
+  },
+  "title": "Jab We Met",
+  "description": "A depressed wealthy businessman finds his life changing after he meets a spunky and care-free young woman.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "releaseYear": 2007,
+  "director": "Imtiaz Ali",
+  "actors": [
+    "Shahid Kapoor",
+    "Kareena Kapoor",
+    "Tarun Arora",
+    "Dara Singh"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BYzBlZjE5ZDMtZWY5ZS00M2Q0LTg3NDItMGNmZmIwOWJiYmM1XkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022ac"
+  },
+  "title": "Rockstar",
+  "description": "The story of a troubled musician who is on a journey of self-discovery.",
+  "genres": [
+    "Drama",
+    "Music",
+    "Romance"
+  ],
+  "releaseYear": 2011,
+  "director": "Imtiaz Ali",
+  "actors": [
+    "Ranbir Kapoor",
+    "Nargis Fakhri",
+    "Shammi Kapoor",
+    "Aditi Rao Hydari"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTc3NzAxMjg4M15BMl5BanBnXkFtZTcwMDc2ODQwNw@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022ad"
+  },
+  "title": "Chak De! India",
+  "description": "A disgraced former hockey player trains a women's hockey team to win back his honor.",
+  "genres": [
+    "Drama",
+    "Family",
+    "Sport"
+  ],
+  "releaseYear": 2007,
+  "director": "Shimit Amin",
+  "actors": [
+    "Shah Rukh Khan",
+    "Vidya Malvade",
+    "Sagarika Ghatge",
+    "Shilpa Shukla"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTUzODMyNzk4NV5BMl5BanBnXkFtZTgwNTk1NTYyNTM@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022ae"
+  },
+  "title": "Koi... Mil Gaya",
+  "description": "A developmentally disabled young man tries to continue the work his father did in communicating with extra-terrestrials from outer space, which leads to something miraculous and wonderful.",
+  "genres": [
+    "Drama",
+    "Fantasy",
+    "Sci-Fi"
+  ],
+  "releaseYear": 2003,
+  "director": "Rakesh Roshan",
+  "actors": [
+    "Hrithik Roshan",
+    "Preity Zinta",
+    "Rekha",
+    "Prem Chopra"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTA1NDQ3Nzg3ODNeQTJeQWpwZ15BbWU3MDU2MzU5NTI@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022af"
+  },
+  "title": "Veer-Zaara",
+  "description": "Veer-Zaara is a saga of love, separation, courage and sacrifice. A love story that is an inspiration and will remain a legend forever.",
+  "genres": [
+    "Drama",
+    "Family",
+    "Musical",
+    "Romance"
+  ],
+  "releaseYear": 2004,
+  "director": "Yash Chopra",
+  "actors": [
+    "Shah Rukh Khan",
+    "Preity Zinta",
+    "Rani Mukerji",
+    "Kirron Kher"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BNJE3ZTdmYjktZTcwMC00Y2JjLWE2ZTAtM2I0NWNkNmJjN2RiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b0"
+  },
+  "title": "Kabhi Khushi Kabhie Gham...",
+  "description": "After marrying a poor woman, rich Rahul is disowned by his father and moves to London to build a new life. Years later, his now grown up little brother Rohan embarks on a mission to bring Rahul back home and reunite the family again.",
+  "genres": [
+    "Drama",
+    "Musical",
+    "Romance"
+  ],
+  "releaseYear": 2001,
+  "director": "Karan Johar",
+  "actors": [
+    "Shah Rukh Khan",
+    "Kajol",
+    "Amitabh Bachchan",
+    "Hrithik Roshan"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BOTQ5Nzc3NzAtMzZlMS00ZWJjLWIxMGMtNDU5ODNlODljNTZiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b1"
+  },
+  "title": "Dil To Pagal Hai",
+  "description": "The story of a dance troupe led by a choreographer who comes to realize that the lead performer and his assistant are in love.",
+  "genres": [
+    "Drama",
+    "Musical",
+    "Romance"
+  ],
+  "releaseYear": 1997,
+  "director": "Yash Chopra",
+  "actors": [
+    "Shah Rukh Khan",
+    "Madhuri Dixit",
+    "Karisma Kapoor",
+    "Akshay Kumar"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BNjllZjFiY2MtNTg0NC00MGE4LWFiYzMtZDdmYzgyMGI2MTU1XkEyXkFqcGdeQXVyODk2ODI3MTU@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b2"
+  },
+  "title": "Om Shanti Om",
+  "description": "A struggling actor falls in love with a famous actress, who is later killed. He is reborn and becomes a superstar, but still loves his previous life's lover, who has been reborn as well.",
+  "genres": [
+    "Action",
+    "Comedy",
+    "Drama"
+  ],
+  "releaseYear": 2007,
+  "director": "Farah Khan",
+  "actors": [
+    "Shah Rukh Khan",
+    "Deepika Padukone",
+    "Arjun Rampal",
+    "Kirron Kher"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjAwNTU0Nzc3M15BMl5BanBnXkFtZTgwMzUxNTQ5MzE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b3"
+  },
+  "title": "Kabhi Alvida Naa Kehna",
+  "description": "Dev and Maya are both married to other people, but fall in love with each other and face challenging societal norms.",
+  "genres": [
+    "Drama",
+    "Romance"
+  ],
+  "releaseYear": 2006,
+  "director": "Karan Johar",
+  "actors": [
+    "Shah Rukh Khan",
+    "Rani Mukerji",
+    "Abhishek Bachchan",
+    "Preity Zinta"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjMwMTExMzA4NF5BMl5BanBnXkFtZTgwMDI2MTcwMzE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b4"
+  },
+  "title": "Sholay",
+  "description": "After his family is murdered by a notorious and ruthless bandit, a former police officer enlists the services of two outlaws to capture the bandit.",
+  "genres": [
+    "Action",
+    "Adventure",
+    "Comedy"
+  ],
+  "releaseYear": 1975,
+  "director": "Ramesh Sippy",
+  "actors": [
+    "Dharmendra",
+    "Sanjeev Kumar",
+    "Hema Malini",
+    "Amitabh Bachchan"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BOWQ0YTUzYzQtZTVmMi00ZmFhLTkzMjAtZDhkOGQ1YmUzOTJkXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b5"
+  },
+  "title": "Mughal-E-Azam",
+  "description": "A Mughal prince clashes with his father, Emperor Akbar, when he falls in love with a court dancer.",
+  "genres": [
+    "Drama",
+    "History",
+    "Romance"
+  ],
+  "releaseYear": 1960,
+  "director": "K. Asif",
+  "actors": [
+    "Prithviraj Kapoor",
+    "Dilip Kumar",
+    "Madhubala",
+    "Durga Khote"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BNGE5ZDJlZTMtMmQwMi00ZWQwLTliZDgtMWMzYzNlZmVkZDRhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b6"
+  },
+  "title": "Mother India",
+  "description": "The story of a poverty-stricken woman raised in India, who battles through despair and hardship.",
+  "genres": [
+    "Drama",
+    "Musical"
+  ],
+  "releaseYear": 1957,
+  "director": "Mehboob Khan",
+  "actors": [
+    "Nargis",
+    "Sunil Dutt",
+    "Rajendra Kumar",
+    "Raaj Kumar"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjI2NzYyMzk1Nl5BMl5BanBnXkFtZTgwNzU4NjIwMjE@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b7"
+  },
+  "title": "Guide",
+  "description": "A tour guide in India becomes entangled in an unhappy marriage, which eventually leads him to crime and to spiritual redemption.",
+  "genres": [
+    "Musical",
+    "Romance"
+  ],
+  "releaseYear": 1965,
+  "director": "Vijay Anand",
+  "actors": [
+    "Dev Anand",
+    "Waheeda Rehman",
+    "Leela Chitnis",
+    "Kishore Sahu"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BM2I0NWFmYWYtOGExMy00YjliLWEwMmYtY2E4ZTRmMDhjZDY4XkEyXkFqcGdeQXVyNjc5Mjg4Nzc@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b8"
+  },
+  "title": "Devdas",
+  "description": "After his wealthy family prohibits him from marrying the woman he is in love with, a young man turns to alcohol, causing both tragedy and unexpected redemption.",
+  "genres": [
+    "Drama",
+    "Musical",
+    "Romance"
+  ],
+  "releaseYear": 2002,
+  "director": "Sanjay Leela Bhansali",
+  "actors": [
+    "Shah Rukh Khan",
+    "Madhuri Dixit",
+    "Aishwarya Rai Bachchan",
+    "Jackie Shroff"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BY2QxMGM4Y2QtMGFmMy00ZjZkLWE1MWItYjMwMTJmY2E5MDc5XkEyXkFqcGdeQXVyNTE0MDc0NTM@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022b9"
+  },
+  "title": "Padmaavat",
+  "description": "Set in medieval Rajasthan, Queen Padmavati is married to a noble king and they live in a prosperous fortress with their subjects until an ambitious Sultan hears of Padmavati's beauty and forms an obsessive love for the Queen.",
+  "genres": [
+    "Drama",
+    "History",
+    "Romance"
+  ],
+  "releaseYear": 2018,
+  "director": "Sanjay Leela Bhansali",
+  "actors": [
+    "Deepika Padukone",
+    "Ranveer Singh",
+    "Shahid Kapoor",
+    "Aditi Rao Hydari"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BOWZjMjkwM2QtZTJiMy00MmI5LWI2YjEtMmY5NjNiYTE2NTBiXkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022ba"
+  },
+  "title": "Bajirao Mastani",
+  "description": "The tale of romance between an Indian general and a Muslim princess.",
+  "genres": [
+    "Action",
+    "Drama",
+    "History"
+  ],
+  "releaseYear": 2015,
+  "director": "Sanjay Leela Bhansali",
+  "actors": [
+    "Ranveer Singh",
+    "Deepika Padukone",
+    "Priyanka Chopra",
+    "Tanvi Azmi"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BNDY5NjBkOGMtZGU4MC00ZDQ5LTk2MDgtNmQ1MzQ1ZGNkNTcxXkEyXkFqcGdeQXVyODMyODMxNDY@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022bb"
+  },
+  "title": "Lage Raho Munna Bhai",
+  "description": "A gangster with a heart of gold gains inspiration from the ghost of Mahatma Gandhi.",
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "releaseYear": 2006,
+  "director": "Rajkumar Hirani",
+  "actors": [
+    "Sanjay Dutt",
+    "Arshad Warsi",
+    "Vidya Balan",
+    "Boman Irani"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BZDRlNzgxZTMtY2I1Ni00ODRmLThmOGUtZmU0ZWNjYmYzZDQ5XkEyXkFqcGdeQXVyNTkzNDQ4ODc@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022bc"
+  },
+  "title": "Baahubali: The Beginning",
+  "description": "In ancient India, an adventurous and daring man becomes involved in a decades-old feud between two warring people.",
+  "genres": [
+    "Action",
+    "Drama"
+  ],
+  "releaseYear": 2015,
+  "director": "S.S. Rajamouli",
+  "actors": [
+    "Prabhas",
+    "Rana Daggubati",
+    "Anushka Shetty",
+    "Tamannaah Bhatia"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022bd"
+  },
+  "title": "Baahubali 2: The Conclusion",
+  "description": "When Shiva, the son of Bahubali, learns about his heritage, he begins to look for answers. His story is juxtaposed with past events that unfolded in the Mahishmati Kingdom.",
+  "genres": [
+    "Action",
+    "Drama"
+  ],
+  "releaseYear": 2017,
+  "director": "S.S. Rajamouli",
+  "actors": [
+    "Prabhas",
+    "Rana Daggubati",
+    "Anushka Shetty",
+    "Tamannaah Bhatia"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BODY0NTYxNzItMjUwNy00M2E3LWI0YzEtN2VjZTkzOTU0MzRkXkEyXkFqcGdeQXVyODAzNzAwOTU@._V1_.jpg"
+},
+{
+  "_id": {
+    "$oid": "67f7d63f9329fd8539a022be"
+  },
+  "title": "Secret Superstar",
+  "description": "A talented teenage singer-songwriter living in a conservative Muslim household struggles to pursue her dream while dealing with her father's opposition.",
+  "genres": [
+    "Drama",
+    "Music"
+  ],
+  "releaseYear": 2017,
+  "director": "Advait Chandan",
+  "actors": [
+    "Zaira Wasim",
+    "Meher Vij",
+    "Raj Arjun",
+    "Aamir Khan"
+  ],
+  "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTY5OTkwNDkzOF5BMl5BanBnXkFtZT"
+}]

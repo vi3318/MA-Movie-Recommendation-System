@@ -60,7 +60,8 @@
             "mainClass": "com.eurekaServer.EurekaServerApplication",
             "projectName": "eurekaServer",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote"
         },
         {
             "type": "java",
@@ -69,6 +70,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.reviewservice.ReviewServiceApplication",
             "projectName": "reviewservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<MAAPIGateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.apiGateway.ApiGatewayApplication",
+            "projectName": "MAAPIGateway",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }

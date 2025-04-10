@@ -18,6 +18,15 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8761
+          env:
+            - name: SPRING_APPLICATION_NAME
+              value: "eureka-server"
+            - name: EUREKA_CLIENT_REGISTER_WITH_EUREKA
+              value: "false"
+            - name: EUREKA_CLIENT_FETCH_REGISTRY
+              value: "false"
+            - name: EUREKA_INSTANCE_HOSTNAME
+              value: "eureka-server"
           resources:
             requests:
               memory: "512Mi"
@@ -26,16 +35,14 @@ spec:
               memory: "1Gi"
               cpu: "500m"
           readinessProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8761
             initialDelaySeconds: 30
             periodSeconds: 10
             timeoutSeconds: 5
             failureThreshold: 3
           livenessProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8761
             initialDelaySeconds: 60
             periodSeconds: 15

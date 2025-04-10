@@ -21,6 +21,44 @@ spec:
           env:
             - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
               value: http://eureka-server:8761/eureka/
+            - name: SPRING_CLOUD_GATEWAY_DISCOVERY_LOCATOR_ENABLED
+              value: "true"
+            - name: SPRING_CLOUD_DISCOVERY_ENABLED
+              value: "true"
+            - name: SPRING_CLOUD_GATEWAY_DISCOVERY_LOCATOR_LOWER-CASE-SERVICE-ID
+              value: "true"
+            - name: SPRING_APPLICATION_NAME
+              value: "api-gateway"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_0_ID
+              value: "user-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_0_URI
+              value: "lb://user-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_0_PREDICATES_0
+              value: "Path=/api/users/**"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_1_ID
+              value: "movie-catalog-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_1_URI
+              value: "lb://movie-catalog-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_1_PREDICATES_0
+              value: "Path=/api/movies/**"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_2_ID
+              value: "review-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_2_URI
+              value: "lb://review-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_2_PREDICATES_0
+              value: "Path=/api/reviews/**"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_3_ID
+              value: "recommendation-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_3_URI
+              value: "lb://recommendation-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_3_PREDICATES_0
+              value: "Path=/api/recommendations/**"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_4_ID
+              value: "auth-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_4_URI
+              value: "lb://user-service"
+            - name: SPRING_CLOUD_GATEWAY_ROUTES_4_PREDICATES_0
+              value: "Path=/api/auth/**"
           resources:
             requests:
               memory: "512Mi"
@@ -29,16 +67,14 @@ spec:
               memory: "1Gi"
               cpu: "500m"
           readinessProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8080
             initialDelaySeconds: 30
             periodSeconds: 10
             timeoutSeconds: 5
             failureThreshold: 3
           livenessProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8080
             initialDelaySeconds: 60
             periodSeconds: 15

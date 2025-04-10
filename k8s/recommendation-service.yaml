@@ -28,7 +28,21 @@ spec:
             - name: SPRING_PROFILES_ACTIVE
               value: "default"
             - name: SPRING_DATA_MONGODB_URI
-              value: "mongodb+srv://harshkkamdar:alokbackend@alokbackend.zh783fq.mongodb.net/?retryWrites=true&w=majority"
+              value: "mongodb+srv://harshkkamdar:harshkkamdar@alokbackend.zh783fq.mongodb.net/MovieReco?retryWrites=true&w=majority"
+            - name: SPRING_APPLICATION_NAME
+              value: "recommendation-service"
+            - name: USERSERVICE_URL
+              value: "http://user-service"
+            - name: MOVIECATALOGSERVICE_URL
+              value: "http://movie-catalog-service"
+            - name: REVIEWSERVICE_URL
+              value: "http://review-service"
+            - name: EUREKA_INSTANCE_PREFER_IP_ADDRESS
+              value: "true"
+            - name: EUREKA_CLIENT_REGISTER_WITH_EUREKA
+              value: "true"
+            - name: EUREKA_CLIENT_FETCH_REGISTRY
+              value: "true"
           resources:
             requests:
               memory: "512Mi"
@@ -37,16 +51,14 @@ spec:
               memory: "1Gi"
               cpu: "500m"
           readinessProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8084
             initialDelaySeconds: 30
             periodSeconds: 10
             timeoutSeconds: 5
             failureThreshold: 3
           livenessProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8084
             initialDelaySeconds: 60
             periodSeconds: 15

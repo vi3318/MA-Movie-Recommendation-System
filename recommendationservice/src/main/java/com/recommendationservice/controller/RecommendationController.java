@@ -1,5 +1,19 @@
 package com.recommendationservice.controller;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.recommendationservice.client.MovieCatalogServiceClient;
 import com.recommendationservice.client.ReviewServiceClient;
 import com.recommendationservice.client.UserServiceClient;
@@ -8,15 +22,6 @@ import com.recommendationservice.model.MovieRecommendation;
 import com.recommendationservice.model.Review;
 import com.recommendationservice.model.User;
 import com.recommendationservice.service.RecommendationService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/recommendations")
@@ -98,6 +103,63 @@ public class RecommendationController {
             result.put("success", false);
             result.put("error", e.getMessage());
             result.put("message", "Inter-service communication test failed");
+        }
+        
+        return ResponseEntity.ok(result);
+    }
+
+    @GetMapping("/users/{userId}/top10")
+    public ResponseEntity<MovieRecommendation> getTopRecommendationsForUser(@PathVariable String userId) {
+        logger.info("Fetching top 10 recommendations for user: {}", userId);
+        MovieRecommendation recommendations = recommendationService.getRecommendationsForUser(userId);
+        return ResponseEntity.ok(recommendations);
+    }
+
+    @GetMapping("/users/{userId}/detailed")
+    public ResponseEntity<Map<String, Object>> getDetailedRecommendations(@PathVariable String userId) {
+        logger.info("Fetching detailed recommendations for user: {}", userId);
+        
+        Map<String, Object> result = new HashMap<>();
+        
+        try {
+            // Get user information
+            User user = userServiceClient.getUserById(userId);
+            result.put("user", user);
+            
+            // Get recommendations by different strategies
+            List<Movie> genreRecommendations = recommendationService.getRecommendationsByGenre(userId);
+            List<Movie> ratingRecommendations = recommendationService.getRecommendationsByRating(userId);
+            List<Movie> similarUserRecommendations = recommendationService.getRecommendationsBySimilarUsers(userId);
+            
+            // Get combined top recommendations
+            MovieRecommendation topRecommendations = recommendationService.getRecommendationsForUser(userId);
+            
+            // Add recommendation counts and samples
+            result.put("recommendationsByGenre", Map.of(
+                "count", genreRecommendations.size(),
+                "samples", genreRecommendations.stream().limit(3).collect(Collectors.toList())
+            ));
+            
+            result.put("recommendationsByRating", Map.of(
+                "count", ratingRecommendations.size(),
+                "samples", ratingRecommendations.stream().limit(3).collect(Collectors.toList())
+            ));
+            
+            result.put("recommendationsBySimilarUsers", Map.of(
+                "count", similarUserRecommendations.size(),
+                "samples", similarUserRecommendations.stream().limit(3).collect(Collectors.toList())
+            ));
+            
+            // Add top 10 recommendations
+            result.put("topRecommendations", topRecommendations.getRecommendedMovies());
+            
+            // Success message
+            result.put("success", true);
+            
+        } catch (Exception e) {
+            logger.error("Error generating detailed recommendations: {}", e.getMessage(), e);
+            result.put("success", false);
+            result.put("error", e.getMessage());
         }
         
         return ResponseEntity.ok(result);

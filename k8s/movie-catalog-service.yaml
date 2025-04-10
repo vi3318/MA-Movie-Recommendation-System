@@ -20,7 +20,7 @@ spec:
             - containerPort: 8082
           env:
             - name: SPRING_DATA_MONGODB_URI
-              value: "mongodb+srv://harshkkamdar:alokbackend@alokbackend.zh783fq.mongodb.net/moviecatalog?retryWrites=true&w=majority"
+              value: "mongodb+srv://harshkkamdar:harshkkamdar@alokbackend.zh783fq.mongodb.net/MovieReco?retryWrites=true&w=majority"
             - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
               value: "http://eureka-server:8761/eureka/"
             - name: MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE
@@ -43,26 +43,23 @@ spec:
               memory: "1Gi"
               cpu: "500m"
           startupProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8082
             initialDelaySeconds: 60
-            periodSeconds: 15
+            periodSeconds: 10
             timeoutSeconds: 5
             failureThreshold: 30
           readinessProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8082
-            initialDelaySeconds: 30
+            initialDelaySeconds: 60
             periodSeconds: 10
+            failureThreshold: 6
             timeoutSeconds: 5
-            failureThreshold: 3
           livenessProbe:
-            httpGet:
-              path: /actuator/health
+            tcpSocket:
               port: 8082
-            initialDelaySeconds: 120
+            initialDelaySeconds: 90
             periodSeconds: 15
             timeoutSeconds: 5
             failureThreshold: 3
