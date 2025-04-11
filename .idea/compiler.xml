@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="recommendationservice" />
+        <module name="eurekaServer" />
+        <module name="reviewservice" />
+        <module name="MAAPIGateway" />
+        <module name="userservice" />
+        <module name="moviecatalogservice" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MAAPIGateway" options="-parameters" />
+      <module name="eurekaServer" options="-parameters" />
+      <module name="moviecatalogservice" options="-parameters" />
+      <module name="recommendationservice" options="-parameters" />
+      <module name="reviewservice" options="-parameters" />
+      <module name="userservice" options="-parameters" />
+    </option>
+  </component>
+</project>
